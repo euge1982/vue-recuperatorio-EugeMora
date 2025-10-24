@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+/*Para que me tome algunos estilos del background*/
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
