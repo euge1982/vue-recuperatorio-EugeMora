@@ -41,14 +41,14 @@ const selectDay = (day: IWeekDay) : void => {
       <button
         v-for="day in days" :key="day.id"
         @click="selectDay(day)"
-        class="px-4 py-2 border mt-2 rounded-md bg-fuchsia-200 hover:bg-fuchsia-700 hover:text-white cursor-pointer transition"
+        class="px-4 py-2 border mt-2 rounded-md shadow text-md lg:text-lg bg-fuchsia-200 hover:bg-fuchsia-700 hover:text-white cursor-pointer transition"
       >
         {{ day.name }}
       </button>
     </div>
 
     <!--Tarjetas-->
-    <div class="flex flex-wrap justify-center gap-2 p-8 mt-6">
+    <div class="flex flex-wrap justify-center gap-4 p-8 mt-6">
       <DayCard v-for="day in days" :key="day.id" :day="day"/>
     </div>
   </div>

@@ -28,6 +28,6 @@ const getState = (condition:boolean): string => {
 
 <template>
   <div :class="getState(props.day.selected)" class="sm:w-35 lg:w-40 shadow p-4  text-center font-semibold  rounded-lg">
-    <h3 class="sm:text-xl lg:text-2xl">{{ props.day.name }}</h3>
+    <h3 class="text-xl lg:text-3xl">{{ props.day.name }}</h3>
   </div>
 </template>
